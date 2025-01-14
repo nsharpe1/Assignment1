@@ -30,12 +30,12 @@ public class TemperatureAboveAverage {
         temperatureAboveAverage.insert(2,29);
         temperatureAboveAverage.insert(3,32);
         temperatureAboveAverage.insert(4,35);
-        int length = temperatureAboveAverage.arr.length;
-        int sum = 0;
+        int arraylength = temperatureAboveAverage.arr.length;
+        int numbersum = 0;
         for (int i = 0; i < temperatureAboveAverage.arr.length; i++) {
-            sum += temperatureAboveAverage.arr[i];
+            numbersum += temperatureAboveAverage.arr[i];
         }
-        double temperatureAverage = sum / length;
+        double temperatureAverage = numbersum / arraylength;
         int abovetemperatureAverage = 0;
         for (int i = 0; i < temperatureAboveAverage.arr.length; i++) {
             if (temperatureAboveAverage.arr[i] > temperatureAverage) {
