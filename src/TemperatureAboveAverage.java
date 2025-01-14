@@ -43,8 +43,8 @@ public class TemperatureAboveAverage {
             }
         }
         
+        System.out.println(Arrays.toString(temperatureAboveAverage.arr));
         System.out.println("Average temperature = " + temperatureAverage);
         System.out.println(abovetemperatureAverage + " numbers are above the average temperature");
-        System.out.println(Arrays.toString(temperatureAboveAverage.arr));
     }
 }
