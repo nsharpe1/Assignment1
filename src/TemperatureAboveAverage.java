@@ -10,10 +10,10 @@ public class TemperatureAboveAverage {
         }
     }
 
-    public void insert (int location, int valueEntered){
+    public void insert (int location, int temperaturevalueEntered){
         try {
             if (arr[location] == Integer.MIN_VALUE) {
-                arr[location] = valueEntered;
+                arr[location] = temperaturevalueEntered;
                 System.out.println("Successfully entered");
             } else {
                 System.out.println("The location is already occupied");
