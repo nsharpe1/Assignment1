@@ -35,15 +35,15 @@ public class TemperatureAboveAverage {
         for (int i = 0; i < temperatureAboveAverage.arr.length; i++) {
             sum += temperatureAboveAverage.arr[i];
         }
-        double average = sum / length;
+        double temperatureAverage = sum / length;
         int abovetemperatureAverage = 0;
         for (int i = 0; i < temperatureAboveAverage.arr.length; i++) {
-            if (temperatureAboveAverage.arr[i]>average) {
+            if (temperatureAboveAverage.arr[i] > temperatureAverage) {
                 abovetemperatureAverage++;
             }
         }
         
-        System.out.println("Average temperature = " + average);
+        System.out.println("Average temperature = " + temperatureAverage);
         System.out.println(abovetemperatureAverage + " numbers are above the average temperature");
         System.out.println(Arrays.toString(temperatureAboveAverage.arr));
     }
